@@ -8,7 +8,7 @@ def fibonacci(n):
     while len(fibonacci_list) < n:
         fibonacci_list.append(fibonacci_list[-1]+fibonacci_list[-2])
     # return a list of fibonacci numbers
-    return fibonacci_list
+    return fibonacci_list[:n]
 if __name__ == '__main__':
     n = int(input())
     print(list(map(cube, fibonacci(n))))
